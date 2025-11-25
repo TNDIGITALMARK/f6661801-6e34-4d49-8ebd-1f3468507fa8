@@ -346,3 +346,24 @@ section.bg-primary h5,
 section.bg-primary h6 {
   color: white;
 }
+
+/* 🔥 CRITICAL FIX: Ensure all yellow/orange buttons (bg-accent) have white text */
+.bg-accent,
+button.bg-accent,
+a.bg-accent,
+[class*="bg-accent"] {
+  color: white !important;
+}
+
+/* Ensure nested elements within accent backgrounds also have white text */
+.bg-accent *,
+button.bg-accent *,
+a.bg-accent * {
+  color: white !important;
+}
+
+/* Override any conflicting text color classes on accent backgrounds */
+.bg-accent.text-foreground,
+.bg-accent .text-foreground {
+  color: white !important;
+}
