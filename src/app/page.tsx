@@ -144,24 +144,27 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
             {[
-              { name: "Single Hung" },
-              { name: "Awning" },
-              { name: "Casement" },
-              { name: "Double Hung" },
-              { name: "Single Slider" },
-              { name: "Double Slider" },
-              { name: "End Vent Slider" },
-              { name: "Picture" },
-              { name: "Fixed Casement" }
+              { name: "Single Hung", image: "/generated/single-hung.png" },
+              { name: "Awning", image: "/generated/awning.png" },
+              { name: "Casement", image: "/generated/casement.png" },
+              { name: "Double Hung", image: "/generated/double-hung.png" },
+              { name: "Single Slider", image: "/generated/single-slider.png" },
+              { name: "Double Slider", image: "/generated/double-slider.png" },
+              { name: "End Vent Slider", image: "/generated/end-vent-slider.png" },
+              { name: "Picture", image: "/generated/picture.png" },
+              { name: "Fixed Casement", image: "/generated/fixed-casement.png" }
             ].map((window, index) => (
               <div
                 key={index}
                 className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group"
               >
-                <div className="relative h-48 bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center">
-                  <div className="text-primary/20 group-hover:text-primary/40 transition-colors">
-                    <DoorOpen size={64} />
-                  </div>
+                <div className="relative h-48 bg-gray-50">
+                  <Image
+                    src={window.image}
+                    alt={`${window.name} window - Canadian style energy-efficient window by 4M Home Services`}
+                    fill
+                    className="object-contain p-4 group-hover:scale-105 transition-transform duration-300"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold text-primary mb-3">{window.name}</h3>
