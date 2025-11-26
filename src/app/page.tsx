@@ -196,18 +196,21 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { name: "4500 Tilt and Turn" },
-              { name: "1400 Series" },
-              { name: "Evolution 2200 Sliding Door" }
+              { name: "4500 Tilt and Turn", image: "/generated/4500-tilt-and-turn.png" },
+              { name: "1400 Series", image: "/generated/1400-series.png" },
+              { name: "Evolution 2200 Sliding Door", image: "/generated/evolution-2200-sliding-door.png" }
             ].map((window, index) => (
               <div
                 key={index}
                 className="bg-white border-2 border-primary/20 rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 hover:border-accent group"
               >
-                <div className="relative h-64 bg-gradient-to-br from-primary/5 to-accent/5 flex items-center justify-center">
-                  <div className="text-primary/30 group-hover:text-accent/50 transition-colors">
-                    <DoorOpen size={80} />
-                  </div>
+                <div className="relative h-64 bg-gray-50">
+                  <Image
+                    src={window.image}
+                    alt={`${window.name} - European style energy-efficient window by 4M Home Services`}
+                    fill
+                    className="object-contain p-4 group-hover:scale-105 transition-transform duration-300"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold text-primary mb-3">{window.name}</h3>
