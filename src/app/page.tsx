@@ -242,20 +242,23 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
             {[
-              { name: "Double Entry Door" },
-              { name: "Single Entry Door" },
-              { name: "Single Entry Door with Sidelite Left" },
-              { name: "Single Entry Door with Sidelite Right" },
-              { name: "Single Entry Door with Two Sidelites" }
+              { name: "Double Entry Door", image: "/generated/double-entry-door.png" },
+              { name: "Single Entry Door", image: "/generated/single-entry-door.png" },
+              { name: "Single Entry Door with Sidelite Left", image: "/generated/single-entry-door-sidelite-left.png" },
+              { name: "Single Entry Door with Sidelite Right", image: "/generated/single-entry-door-sidelite-right.png" },
+              { name: "Single Entry Door with Two Sidelites", image: "/generated/single-entry-door-two-sidelites.png" }
             ].map((door, index) => (
               <div
                 key={index}
                 className="bg-white/5 backdrop-blur-sm rounded-xl overflow-hidden border border-white/10 hover:border-accent transition-all duration-300 group"
               >
-                <div className="relative h-56 bg-gradient-to-br from-accent/10 to-secondary/10 flex items-center justify-center">
-                  <div className="text-white/30 group-hover:text-accent transition-colors">
-                    <DoorOpen size={56} />
-                  </div>
+                <div className="relative h-56 bg-white/95">
+                  <Image
+                    src={door.image}
+                    alt={`${door.name} - Professional entry door installation by 4M Home Services`}
+                    fill
+                    className="object-contain p-4 group-hover:scale-105 transition-transform duration-300"
+                  />
                 </div>
                 <div className="p-4">
                   <h3 className="text-base font-semibold text-white">{door.name}</h3>
