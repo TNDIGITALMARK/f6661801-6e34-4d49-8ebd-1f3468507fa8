@@ -33,7 +33,7 @@ export function Navigation() {
             <Link href="/about" className="text-white hover:text-accent transition-colors font-medium">
               About Us
             </Link>
-            <Link href="/#contact" className="text-white hover:text-accent transition-colors font-medium">
+            <Link href="/estimate" className="text-white hover:text-accent transition-colors font-medium">
               Contact
             </Link>
           </div>
@@ -90,7 +90,7 @@ export function Navigation() {
               About Us
             </Link>
             <Link
-              href="/#contact"
+              href="/estimate"
               className="block text-white hover:text-accent transition-colors font-medium py-2"
               onClick={() => setIsMenuOpen(false)}
             >
