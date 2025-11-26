@@ -451,13 +451,6 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center opacity-50">
-            {[1, 2, 3, 4].map((i) => (
-              <div key={i} className="w-32 h-16 bg-gray-200 rounded-lg flex items-center justify-center">
-                <span className="text-gray-400 text-sm font-medium">Company logo</span>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
