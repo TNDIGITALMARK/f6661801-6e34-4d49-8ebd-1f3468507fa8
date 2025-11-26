@@ -466,102 +466,105 @@ export default function HomePage() {
         <div className="container-4m">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              Key Warranty Features
+              Our Warranty Promise
             </h2>
+            <p className="text-lg text-muted-foreground">
+              Premium protection for your investment
+            </p>
           </div>
 
-          <div className="bg-white rounded-xl shadow-lg p-8 md:p-12 space-y-8">
-            {/* Main Warranty Points */}
-            <div className="space-y-6">
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-8 h-8 bg-accent rounded-full flex items-center justify-center text-white font-bold">
-                  1
+          {/* Warranty Coverage Cards */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+            {/* Workmanship */}
+            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow border-t-4 border-accent">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center">
+                  <Wrench className="text-accent" size={24} />
                 </div>
-                <p className="text-muted-foreground">
-                  4M Home Services takes full responsibility only for products and services provided on a <strong className="text-primary">"SUPPLY & INSTALL"</strong> basis. Products sold on a <strong className="text-primary">"SUPPLY ONLY"</strong> basis are subject to the terms and conditions outlined in the manufacturer's warranty.
-                </p>
+                <h3 className="text-xl font-bold text-primary">Workmanship</h3>
               </div>
-
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-8 h-8 bg-accent rounded-full flex items-center justify-center text-white font-bold">
-                  2
-                </div>
-                <div className="space-y-4 flex-1">
-                  <p className="text-muted-foreground">
-                    Subject to the limitations in the manufacturers' warranties and the conditions outlined herein, 4M Home Services provides the following warranties:
-                  </p>
-                  <div className="space-y-4 pl-4 border-l-2 border-accent/30">
-                    <div>
-                      <h4 className="font-semibold text-primary mb-2">a) Workmanship — Lifetime warranty.</h4>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-primary mb-2">b) U.P.V.C. window frames and sashes</h4>
-                      <p className="text-muted-foreground">Lifetime warranty against material defects such as blistering, peeling, delamination, corrosion, or fading.</p>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-primary mb-2">c) Window hardware</h4>
-                      <p className="text-muted-foreground">Lifetime warranty for material defects.</p>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-primary mb-2">d) Insulating glass units</h4>
-                      <p className="text-muted-foreground">Lifetime warranty against seal failure. Any physical damage to the glass (cracks, scratches, etc.) is not covered. Spontaneous glass breakage is covered for one heating season.</p>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-primary mb-2">e) Sliding door frames and sashes made of U.P.V.C.</h4>
-                      <p className="text-muted-foreground">Lifetime warranty against material defects such as blistering, peeling, corrosion, uneven fading, or discoloration.</p>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-primary mb-2">f) Steel doors, glass inserts, and other components</h4>
-                      <p className="text-muted-foreground">Lifetime warranty against material defects, including door panel delamination, blistering, peeling, hinge and sill corrosion, and uneven fading or discoloration.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-8 h-8 bg-accent rounded-full flex items-center justify-center text-white font-bold">
-                  3
-                </div>
-                <p className="text-muted-foreground">
-                  The warranty is <strong className="text-primary">non-prorated (full)</strong> and can be transferred to the new homeowner with a mandatory <strong className="text-primary">60-day written notice</strong> to 4M Home Services.
-                </p>
-              </div>
+              <p className="text-2xl font-bold text-accent mb-2">Lifetime</p>
+              <p className="text-muted-foreground">Our installation quality guaranteed for life</p>
             </div>
 
-            {/* Exclusions & Limitations */}
-            <div className="bg-red-50 rounded-lg p-6 border-l-4 border-red-500 mt-8">
-              <h3 className="text-2xl font-bold text-red-900 mb-4">Exclusions & Limitations</h3>
-              <p className="text-red-800 mb-4 font-semibold">4M Home Services will not be liable for:</p>
-              <ul className="space-y-3 text-red-700">
-                <li className="flex items-start gap-3">
-                  <span className="text-red-500 font-bold">•</span>
-                  <span>Variations in grain patterns or color of natural wood components.</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-red-500 font-bold">•</span>
-                  <span>Condensation on the interior surface of glazing caused by natural humidity and temperature differences, especially when exacerbated by window coverings, blinds, curtains, or shutters that prevent.</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-red-500 font-bold">•</span>
-                  <span>Physical damage of any kind resulting from misuse, accidents, improper cleaning or maintenance, exposure to harsh chemicals, natural disasters, third-party actions, or other external factors.</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-red-500 font-bold">•</span>
-                  <span>Damage caused by building structure movement, wall shifts, or any subsequent construction work such as painting, stucco application, or interior re-trimming.</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-red-500 font-bold">•</span>
-                  <span>Products that have been repaired, adjusted, or modified by anyone other than certified 4M Home Services technicians.</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-red-500 font-bold">•</span>
-                  <span>Any consequential or incidental damages caused by a defective product, regardless of whether the defect is covered under this warranty.</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-red-500 font-bold">•</span>
-                  <span>Products for which full payment has not been made within 45 days of the installation date.</span>
-                </li>
-              </ul>
+            {/* Windows & Frames */}
+            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow border-t-4 border-accent">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center">
+                  <Grid3x3 className="text-accent" size={24} />
+                </div>
+                <h3 className="text-xl font-bold text-primary">Window Frames</h3>
+              </div>
+              <p className="text-2xl font-bold text-accent mb-2">Lifetime</p>
+              <p className="text-muted-foreground">Protection against defects, peeling, and fading</p>
+            </div>
+
+            {/* Hardware */}
+            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow border-t-4 border-accent">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center">
+                  <ShieldCheck className="text-accent" size={24} />
+                </div>
+                <h3 className="text-xl font-bold text-primary">Hardware</h3>
+              </div>
+              <p className="text-2xl font-bold text-accent mb-2">Lifetime</p>
+              <p className="text-muted-foreground">All hardware components covered</p>
+            </div>
+
+            {/* Glass Units */}
+            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow border-t-4 border-accent">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center">
+                  <Sparkles className="text-accent" size={24} />
+                </div>
+                <h3 className="text-xl font-bold text-primary">Glass Units</h3>
+              </div>
+              <p className="text-2xl font-bold text-accent mb-2">Lifetime</p>
+              <p className="text-muted-foreground">Sealed against failure and condensation</p>
+            </div>
+
+            {/* Doors */}
+            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow border-t-4 border-accent">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center">
+                  <DoorOpen className="text-accent" size={24} />
+                </div>
+                <h3 className="text-xl font-bold text-primary">Doors</h3>
+              </div>
+              <p className="text-2xl font-bold text-accent mb-2">Lifetime</p>
+              <p className="text-muted-foreground">Steel doors and frames fully protected</p>
+            </div>
+
+            {/* Transferable */}
+            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow border-t-4 border-accent">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center">
+                  <Users className="text-accent" size={24} />
+                </div>
+                <h3 className="text-xl font-bold text-primary">Transferable</h3>
+              </div>
+              <p className="text-2xl font-bold text-accent mb-2">60 Days</p>
+              <p className="text-muted-foreground">Notice required for warranty transfer</p>
+            </div>
+          </div>
+
+          {/* Important Note */}
+          <div className="bg-white rounded-xl p-6 md:p-8 shadow-md border-l-4 border-primary">
+            <div className="flex items-start gap-4">
+              <ShieldCheck className="text-primary flex-shrink-0 mt-1" size={28} />
+              <div>
+                <h3 className="text-xl font-bold text-primary mb-3">Full Coverage Warranty</h3>
+                <p className="text-muted-foreground mb-4">
+                  Our warranty covers all products and services provided on a <strong className="text-primary">Supply & Install</strong> basis. Your warranty is non-prorated and transferable to new homeowners.
+                </p>
+                <Link
+                  href="/warranty"
+                  className="inline-flex items-center text-accent hover:underline font-semibold"
+                >
+                  View full warranty details
+                  <ArrowRight className="ml-2" size={16} />
+                </Link>
+              </div>
             </div>
           </div>
         </div>
